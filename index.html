@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report - Q4 2024</title>
+    
+    <!-- RevealJS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    
+    <!-- MathJax for mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Custom styles -->
+    <style>
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            font-weight: 700;
+        }
+        
+        .reveal h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+        
+        .reveal h2 {
+            font-size: 1.8em;
+            color: #45a049;
+        }
+        
+        .reveal p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .contact-info {
+            margin-top: 3em;
+            padding: 1.5em;
+            background: rgba(76, 175, 80, 0.1);
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        
+        .financial-metric {
+            background: rgba(76, 175, 80, 0.15);
+            padding: 1.5em;
+            border-radius: 8px;
+            margin: 1em 0;
+            text-align: left;
+        }
+        
+        .metric-label {
+            font-size: 0.9em;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .metric-value {
+            font-size: 2em;
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 0.5em 0 0 0;
+        }
+        
+        .code-block {
+            background: #1e1e1e;
+            padding: 1.5em;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 0.8em;
+            line-height: 1.4;
+        }
+        
+        .formula {
+            background: rgba(76, 175, 80, 0.1);
+            padding: 2em;
+            border-radius: 8px;
+            margin: 1.5em 0;
+            font-size: 1.3em;
+        }
+        
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .reveal code {
+            padding: 2px 6px;
+            background: rgba(76, 175, 80, 0.2);
+            border-radius: 3px;
+            color: #4CAF50;
+        }
+        
+        .speaker-notes {
+            text-align: left;
+            font-size: 0.8em;
+            color: #999;
+        }
+        
+        .key-point {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .slide-number {
+            font-size: 0.7em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <h3>Q4 2024 Financial Performance</h3>
+                <div class="contact-info">
+                    <p><strong>Presenter:</strong> Financial Analytics Team</p>
+                    <p><strong>Contact:</strong> 22f3002140@ds.study.iitm.ac.in</p>
+                    <p><strong>Date:</strong> November 27, 2024</p>
+                </div>
+                
+                <aside class="notes">
+                    Welcome stakeholders to the Q4 2024 earnings presentation. This is our most comprehensive quarter, 
+                    showing strong financial performance across all segments. Please direct any questions to the contact email listed.
+                </aside>
+            </section>
+            
+            <!-- Executive Summary -->
+            <section>
+                <h2>Executive Summary</h2>
+                <ul>
+                    <li class="fragment">Strong revenue growth across all business segments</li>
+                    <li class="fragment">Improved operational efficiency metrics</li>
+                    <li class="fragment">Strategic investments in digital transformation</li>
+                    <li class="fragment">Record-breaking customer satisfaction scores</li>
+                    <li class="fragment">Sustainable path to long-term growth</li>
+                </ul>
+                
+                <aside class="notes">
+                    The executive summary highlights five key achievement areas. Each point represents a strategic priority 
+                    that contributed to our Q4 success. Allow time for questions on any of these points after the presentation.
+                </aside>
+            </section>
+            
+            <!-- Financial Overview (Markdown section) -->
+            <section>
+                <section>
+                    <h2>Financial Overview</h2>
+                    <p>Key performance indicators for Q4 2024</p>
+                    
+                    <aside class="notes">
+                        This section covers our core financial metrics. We've achieved record revenues and improved margins 
+                        through operational excellence and strategic positioning in high-growth markets.
+                    </aside>
+                </section>
+                
+                <!-- Revenue Slide -->
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Revenue Performance
+                        
+                        ### Total Revenue: $2.4B
+                        
+                        - **Year-over-Year Growth:** 18% increase
+                        - **Quarter-over-Quarter Growth:** 5% increase
+                        - **Highest Quarter on Record**
+                        
+                        ---
+                        
+                        ### Revenue Breakdown by Segment
+                        
+                        | Segment | Revenue | Growth |
+                        |---------|---------|--------|
+                        | Enterprise | $1.2B | 22% |
+                        | Mid-Market | $800M | 15% |
+                        | SMB | $400M | 12% |
+                        
+                        <aside class="notes">
+                            Our revenue breakdown shows consistent strength across all customer segments. Enterprise solutions 
+                            continue to be our growth engine, benefiting from cloud migration trends and digital transformation 
+                            initiatives across industries.
+                        </aside>
+                    </textarea>
+                </section>
+                
+                <!-- Profitability Metrics -->
+                <section>
+                    <h3>Profitability Metrics</h3>
+                    <div style="display: flex; justify-content: space-around; align-items: flex-start;">
+                        <div class="financial-metric">
+                            <div class="metric-label">Gross Profit Margin</div>
+                            <div class="metric-value">67.8%</div>
+                            <p style="font-size: 0.9em; color: #4CAF50;">↑ 2.1% vs Q3</p>
+                        </div>
+                        <div class="financial-metric">
+                            <div class="metric-label">Operating Margin</div>
+                            <div class="metric-value">28.5%</div>
+                            <p style="font-size: 0.9em; color: #4CAF50;">↑ 1.8% vs Q3</p>
+                        </div>
+                        <div class="financial-metric">
+                            <div class="metric-label">Net Margin</div>
+                            <div class="metric-value">21.2%</div>
+                            <p style="font-size: 0.9em; color: #4CAF50;">↑ 1.5% vs Q3</p>
+                        </div>
+                    </div>
+                    
+                    <aside class="notes">
+                        All three margin metrics show significant improvement. This is the result of our focus on operational 
+                        efficiency, cost optimization, and favorable business mix. These improvements are sustainable and 
+                        reflect the strength of our business model.
+                    </aside>
+                </section>
+            </section>
+            
+            <!-- Financial Formulas -->
+            <section>
+                <h2>Key Financial Formulas</h2>
+                
+                <div class="formula">
+                    <p><strong>Return on Equity (ROE):</strong></p>
+                    $$\text{ROE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}}$$
+                </div>
+                
+                <div class="fragment">
+                    <div class="formula">
+                        <p><strong>Earnings Per Share (EPS):</strong></p>
+                        $$\text{EPS} = \frac{\text{Net Income} - \text{Dividends}}{\text{Average Shares Outstanding}}$$
+                    </div>
+                </div>
+                
+                <div class="fragment">
+                    <div class="formula">
+                        <p><strong>Free Cash Flow:</strong></p>
+                        $$\text{FCF} = \text{Operating Cash Flow} - \text{Capital Expenditures}$$
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    These are fundamental financial formulas used to evaluate company performance. Our Q4 results show 
+                    strong performance across all these metrics, indicating healthy cash generation and shareholder value creation.
+                </aside>
+            </section>
+            
+            <!-- Revenue Forecast with Formula -->
+            <section>
+                <h2>Revenue Forecast Model</h2>
+                <p>Projected revenue growth for next 4 quarters</p>
+                
+                <div class="formula">
+                    <p><strong>Quarterly Growth Model:</strong></p>
+                    $$R_n = R_0 \cdot (1 + g)^n$$
+                    <p style="font-size: 0.8em; margin-top: 1em;">
+                        Where: $R_n$ = Revenue in period n, $R_0$ = Base revenue, $g$ = Growth rate, $n$ = Number of periods
+                    </p>
+                </div>
+                
+                <div style="margin-top: 2em; text-align: left;">
+                    <p><strong>Assumptions:</strong></p>
+                    <ul style="font-size: 0.95em;">
+                        <li>Base Revenue ($R_0$): $2.4B (Q4 2024)</li>
+                        <li>Growth Rate ($g$): 4.5% per quarter</li>
+                        <li>Conservative market conditions factored in</li>
+                    </ul>
+                </div>
+                
+                <aside class="notes">
+                    Our revenue forecast uses a conservative 4.5% quarterly growth rate. This is achievable based on current 
+                    market conditions, pipeline strength, and our ability to capture market share in key vertical markets.
+                </aside>
+            </section>
+            
+            <!-- Code Samples -->
+            <section>
+                <h2>Technical Implementation</h2>
+                <p>Data processing pipeline for financial analytics</p>
+                
+                <aside class="notes">
+                    Our financial systems are built on modern, scalable architecture. Here's a sample of the code that powers 
+                    our real-time analytics and reporting infrastructure.
+                </aside>
+            </section>
+            
+            <section>
+                <h3>Python Data Analysis</h3>
+                <pre><code class="language-python" data-trim data-line-numbers="1-20">
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Load quarterly revenue data
+df = pd.read_csv('quarterly_data.csv')
+
+# Calculate growth rates
+df['growth_rate'] = df['revenue'].pct_change()
+
+# Fit linear regression model
+X = np.array(df.index).reshape(-1, 1)
+y = df['revenue'].values
+model = LinearRegression()
+model.fit(X, y)
+
+# Forecast next 4 quarters
+forecast_periods = np.array([len(df), len(df)+1, len(df)+2, len(df)+3])
+predictions = model.predict(forecast_periods.reshape(-1, 1))
+
+print(f"Forecasted Revenue (Next 4 Quarters): ${predictions}")
+                </code></pre>
+                
+                <aside class="notes">
+                    This Python code demonstrates our statistical approach to revenue forecasting. We use linear regression 
+                    on historical data to predict future trends with a 95% confidence interval.
+                </aside>
+            </section>
+            
+            <section>
+                <h3>SQL Query for Financial Reporting</h3>
+                <pre><code class="language-sql" data-trim data-line-numbers="1-15">
+SELECT 
+    DATE_TRUNC('quarter', transaction_date) AS quarter,
+    SUM(amount) AS total_revenue,
+    COUNT(DISTINCT customer_id) AS customer_count,
+    AVG(amount) AS avg_transaction,
+    SUM(amount) / COUNT(DISTINCT customer_id) AS revenue_per_customer
+FROM transactions
+WHERE transaction_date >= '2024-01-01'
+    AND transaction_status = 'completed'
+GROUP BY DATE_TRUNC('quarter', transaction_date)
+ORDER BY quarter DESC;
+                </code></pre>
+                
+                <aside class="notes">
+                    This SQL query extracts key financial metrics from our transaction database. It's executed daily to 
+                    populate our executive dashboard and provide real-time visibility into business performance.
+                </aside>
+            </section>
+            
+            <section>
+                <h3>JavaScript Visualization</h3>
+                <pre><code class="language-javascript" data-trim data-line-numbers="1-18">
+// Calculate quarterly metrics for dashboard
+function calculateMetrics(quarterlyData) {
+    return quarterlyData.map(quarter => ({
+        period: quarter.date,
+        revenue: quarter.total,
+        growth: ((quarter.total - previousQuarter.total) 
+                 / previousQuarter.total * 100).toFixed(2),
+        margin: (quarter.profit / quarter.revenue * 100)
+                 .toFixed(2),
+        status: quarter.profit > targetProfit ? 'on-track' : 'review'
+    }));
+}
+
+// Render metrics on dashboard
+const metrics = calculateMetrics(Q4Data);
+metrics.forEach(m => {
+    updateDashboard(m.period, m.revenue, m.growth, m.margin);
+});
+                </code></pre>
+                
+                <aside class="notes">
+                    Our JavaScript visualization layer transforms raw data into interactive dashboards for stakeholder viewing. 
+                    This code calculates key performance metrics and updates visualizations in real-time.
+                </aside>
+            </section>
+            
+            <!-- Key Achievements -->
+            <section>
+                <h2>Key Achievements</h2>
+                <div style="text-align: left;">
+                    <div class="fragment" style="margin-bottom: 1.5em;">
+                        <h4 style="color: #4CAF50; margin-bottom: 0.5em;">🎯 Market Expansion</h4>
+                        <p>Entered 3 new international markets, increasing geographic diversification</p>
+                    </div>
+                    
+                    <div class="fragment" style="margin-bottom: 1.5em;">
+                        <h4 style="color: #4CAF50; margin-bottom: 0.5em;">🚀 Product Innovation</h4>
+                        <p>Launched 5 new features based on customer feedback and market research</p>
+                    </div>
+                    
+                    <div class="fragment" style="margin-bottom: 1.5em;">
+                        <h4 style="color: #4CAF50; margin-bottom: 0.5em;">👥 Team Growth</h4>
+                        <p>Expanded workforce by 15%, focusing on AI/ML and cloud engineering talent</p>
+                    </div>
+                    
+                    <div class="fragment">
+                        <h4 style="color: #4CAF50; margin-bottom: 0.5em;">📊 Data Capabilities</h4>
+                        <p>Implemented advanced analytics platform processing 10M+ transactions daily</p>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    These four key achievements represent strategic progress in our main business pillars. Each item will 
+                    contribute to sustained revenue growth and margin expansion in the coming year.
+                </aside>
+            </section>
+            
+            <!-- Strategic Outlook -->
+            <section>
+                <h2>Strategic Outlook 2025</h2>
+                
+                <div style="text-align: left; font-size: 0.95em;">
+                    <h4 style="color: #4CAF50; margin-bottom: 1em;">Strategic Priorities</h4>
+                    
+                    <ol>
+                        <li class="fragment"><strong>AI Integration:</strong> Embed AI capabilities across product suite for enhanced customer value</li>
+                        <li class="fragment"><strong>Market Penetration:</strong> Increase share in enterprise segment from 45% to 55%</li>
+                        <li class="fragment"><strong>Operational Excellence:</strong> Reduce customer acquisition cost by 20% through optimization</li>
+                        <li class="fragment"><strong>Sustainability:</strong> Achieve carbon-neutral operations by end of 2025</li>
+                    </ol>
+                </div>
+                
+                <aside class="notes">
+                    Looking ahead to 2025, we have four strategic pillars driving our business plan. These initiatives are 
+                    aligned with market trends and positioned to generate 20%+ revenue growth while maintaining healthy margins.
+                </aside>
+            </section>
+            
+            <!-- Risk Assessment -->
+            <section>
+                <h2>Risk Assessment & Mitigation</h2>
+                
+                <table style="font-size: 0.85em; width: 100%;">
+                    <thead>
+                        <tr style="color: #4CAF50; font-weight: bold; border-bottom: 2px solid #4CAF50;">
+                            <td>Risk Factor</td>
+                            <td>Impact</td>
+                            <td>Mitigation Strategy</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>Market Volatility</td>
+                            <td>High</td>
+                            <td>Diversified customer base & revenue streams</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Regulatory Changes</td>
+                            <td>Medium</td>
+                            <td>Proactive compliance team & legal counsel</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Technology Disruption</td>
+                            <td>Medium</td>
+                            <td>Continuous R&D investment (15% of revenue)</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Talent Acquisition</td>
+                            <td>Medium</td>
+                            <td>Competitive compensation & growth opportunities</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <aside class="notes">
+                    We've identified four key risks to our business and implemented specific mitigation strategies for each. 
+                    Our diversified approach reduces concentration risk and our proactive management demonstrates governance maturity.
+                </aside>
+            </section>
+            
+            <!-- Conclusion -->
+            <section>
+                <h2>Conclusion</h2>
+                
+                <div style="text-align: left; margin-top: 2em;">
+                    <p class="fragment"><span class="key-point">▸ Q4 2024 exceeded all financial targets</span></p>
+                    <p class="fragment"><span class="key-point">▸ Strong execution on strategic initiatives</span></p>
+                    <p class="fragment"><span class="key-point">▸ Positioned for accelerated growth in 2025</span></p>
+                    <p class="fragment"><span class="key-point">▸ Committed to shareholder value creation</span></p>
+                </div>
+                
+                <div style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #4CAF50;">
+                    <p style="font-size: 0.9em; color: #999;">Questions? Contact us at:</p>
+                    <p style="font-size: 1.1em; color: #4CAF50; font-weight: bold;">22f3002140@ds.study.iitm.ac.in</p>
+                </div>
+                
+                <aside class="notes">
+                    We've covered a comprehensive overview of our Q4 2024 performance and strategic direction for 2025. 
+                    Our strong financial results, combined with strategic execution and market positioning, demonstrate 
+                    the strength of our business model. Thank you for your attention, and we're ready to address any questions.
+                </aside>
+            </section>
+            
+        </div>
+    </div>
+    
+    <!-- RevealJS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            width: 1000,
+            height: 700,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            markdown: {
+                breaks: true
+            }
+        });
+    </script>
+</body>
+</html>
