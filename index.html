@@ -1,418 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quarterly Earnings Report - Interactive Presentation</title>
-    
-    <!-- Reveal.js CSS -->
+    <title>Q4 2024 Earnings Report</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
-    
-    <!-- Highlight.js for code syntax highlighting -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
-    
-    <!-- MathJax for mathematical equations -->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
     <style>
         .reveal h1, .reveal h2, .reveal h3 {
             text-transform: none;
         }
-        
-        .reveal pre {
-            width: 100%;
-            font-size: 0.55em;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        .reveal .email {
+            font-size: 0.6em;
+            color: #42affa;
         }
-        
-        .reveal code {
-            padding: 2px 5px;
+        .reveal .formula {
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-        }
-        
-        .contact-box {
-            background: rgba(79, 184, 255, 0.1);
-            border: 2px solid #4fb8ff;
-            border-radius: 8px;
             padding: 20px;
-            margin-top: 30px;
-            display: inline-block;
+            border-radius: 10px;
+            margin: 20px 0;
         }
-        
-        .contact-box p {
-            margin: 5px 0;
-            font-size: 0.8em;
-        }
-        
-        .metric-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .metric-card {
-            background: rgba(79, 184, 255, 0.15);
-            border-left: 4px solid #4fb8ff;
-            padding: 15px;
-            border-radius: 4px;
-        }
-        
-        .metric-card h4 {
-            margin: 0 0 10px 0;
-            color: #4fb8ff;
-            font-size: 0.9em;
-        }
-        
-        .metric-value {
-            font-size: 1.5em;
-            color: #fff;
+        .reveal .metric {
+            font-size: 2em;
+            color: #42affa;
             font-weight: bold;
         }
-        
-        .formula {
-            background: rgba(100, 200, 100, 0.1);
-            border: 1px solid rgba(100, 200, 100, 0.3);
-            padding: 15px;
-            border-radius: 4px;
-            margin: 20px 0;
-            font-size: 1.1em;
+        .reveal .positive {
+            color: #4CAF50;
         }
-        
-        .fade-in-item {
-            opacity: 0.3;
-        }
-        
-        .fade-in-item.visible {
-            opacity: 1;
+        .reveal .warning {
+            color: #FFC107;
         }
     </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
-            
-            <!-- Slide 1: Title Slide -->
+            <!-- Title Slide -->
             <section>
-                <h1>Q3 2025 Earnings Report</h1>
-                <h3>Financial Performance & Strategic Initiatives</h3>
-                <p style="margin-top: 50px; font-size: 0.9em;">
-                    <span class="fragment fade-in">Stakeholder Presentation</span>
-                    <span class="fragment fade-in" style="display: block; margin-top: 20px;">December 4, 2025</span>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p style="margin-top: 50px;">
+                    <small>Prepared by: Technical Consulting Team</small><br>
+                    <small class="email">22f3002140@ds.study.iitm.ac.in</small>
                 </p>
-                <div class="contact-box" style="margin-top: 40px;">
-                    <p style="font-size: 0.75em;"><strong>Technical Consultant</strong></p>
-                    <p style="font-size: 0.75em;">📧 22f3002140@ds.study.iitm.ac.in</p>
-                </div>
-            </section>
-
-            <!-- Slide 2: Contact Information -->
-            <section>
-                <h2>Presentation Team</h2>
-                <div class="contact-box">
-                    <p><strong>Technical Consultant</strong></p>
-                    <p>Email: 22f3002140@ds.study.iitm.ac.in</p>
-                    <p style="font-size: 0.75em; margin-top: 10px; color: #aaa;">Financial Analysis & Data Integration</p>
-                </div>
                 <aside class="notes">
-                    This presentation covers Q3 2025 financial results. 
-                    Contact the technical consultant for data queries and technical analysis.
-                    Speaker should introduce themselves and their role in the earnings report.
+                    Welcome stakeholders to the Q4 earnings presentation. This is our most successful quarter to date.
+                    Key talking points: Revenue growth, cost optimization, and strategic initiatives.
                 </aside>
             </section>
 
-            <!-- Slide 3: Executive Summary (Markdown-style) -->
+            <!-- Executive Summary with Fragments -->
+            <section>
+                <h2>Executive Summary</h2>
+                <ul>
+                    <li class="fragment fade-in">Revenue: <span class="metric positive">$2.4B</span> (+18% YoY)</li>
+                    <li class="fragment fade-in">Net Income: <span class="metric positive">$450M</span> (+22% YoY)</li>
+                    <li class="fragment fade-in">EPS: <span class="metric">$3.75</span> (Beat estimates by $0.25)</li>
+                    <li class="fragment fade-in">Customer Growth: <span class="metric positive">+12%</span></li>
+                </ul>
+                <aside class="notes">
+                    Highlight each metric as it appears. Emphasize that we beat analyst estimates.
+                    Be prepared to discuss customer acquisition costs and retention rates.
+                </aside>
+            </section>
+
+            <!-- Markdown Slide -->
             <section data-markdown>
                 <textarea data-template>
-                    ## Executive Summary
-
-                    - **Revenue Growth**: Strong YoY performance
-                    - **Market Position**: Maintained competitive advantage
-                    - **Operational Efficiency**: 12% improvement in margins
-                    - **Strategic Investments**: Continued innovation focus
-
-                    <aside class="notes">
-                        Q3 showed strong execution across all business segments.
-                        Revenue grew 18% YoY to $2.45B, exceeding guidance.
-                        Operating margins expanded due to operational efficiency improvements.
-                    </aside>
+                    ## Key Performance Indicators
+                    
+                    ### Revenue Breakdown
+                    - **Digital Banking**: 45% of total revenue
+                    - **Investment Services**: 30% of total revenue
+                    - **Lending Operations**: 25% of total revenue
+                    
+                    ### Market Position
+                    > "We have strengthened our position as a leading digital-first financial institution"
+                    
+                    ---
+                    
+                    ### Growth Drivers
+                    1. Mobile app adoption (+35%)
+                    2. AI-powered advisory services
+                    3. Strategic partnerships
                 </textarea>
             </section>
 
-            <!-- Slide 4: Key Financial Metrics -->
+            <!-- Financial Formulas -->
             <section>
-                <h2>Q3 2025 Financial Metrics</h2>
-                <div class="metric-grid">
-                    <div class="metric-card">
-                        <h4>Total Revenue</h4>
-                        <div class="metric-value">$2.45B</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+18% YoY</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>Operating Income</h4>
-                        <div class="metric-value">$612M</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+22% YoY</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>Net Income</h4>
-                        <div class="metric-value">$489M</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+19% YoY</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>EPS</h4>
-                        <div class="metric-value">$1.23</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+20% YoY</p>
-                    </div>
-                </div>
-                <aside class="notes">
-                    All key metrics exceeded expectations in Q3.
-                    Revenue momentum continues strong into Q4.
-                    Net income growth outpaced revenue growth, demonstrating operational leverage.
-                    EPS grew faster due to modest share buyback activity.
-                </aside>
-            </section>
-
-            <!-- Slide 5: Revenue Analysis with Code Example -->
-            <section>
-                <h2>Revenue Calculation Model</h2>
-                <p>Financial model implementation:</p>
-                <pre><code class="language-python">def calculate_revenue_metrics(quarters_data):
-    <span class="fragment highlight-current-green">total_revenue = sum(q['revenue'] for q in quarters_data)</span>
-    <span class="fragment highlight-current-green">avg_growth = total_revenue / quarters_data[0]['revenue']</span>
-    <span class="fragment highlight-current-green">yoy_change = ((total_revenue - prev_year) / prev_year) * 100</span>
-    <span class="fragment highlight-current-green">return {'revenue': total_revenue, 'growth': yoy_change}</span>
-</code></pre>
-                <aside class="notes">
-                    This Python function demonstrates our revenue calculation methodology.
-                    Line 1: Sum all quarterly revenues
-                    Line 2: Calculate average growth factor
-                    Line 3: Compute year-over-year percentage change
-                    Line 4: Return key metrics for reporting
-                </aside>
-            </section>
-
-            <!-- Slide 6: Financial Formulas -->
-            <section>
-                <h2>Key Financial Formulas</h2>
-                
-                <h3 style="margin-top: 40px; margin-bottom: 20px; font-size: 1.2em;">Gross Profit Margin</h3>
+                <h2>Financial Metrics</h2>
                 <div class="formula">
-                    $$\text{Gross Profit Margin} = \frac{\text{Revenue} - \text{COGS}}{\text{Revenue}} \times 100\%$$
+                    <h3>Return on Equity (ROE)</h3>
+                    <p style="font-size: 1.2em;">
+                        ROE = <span style="border-top: 2px solid white; padding: 5px;">Net Income</span> / Shareholders' Equity
+                    </p>
+                    <p class="fragment">Our ROE: <span class="metric positive">15.2%</span></p>
                 </div>
-                
-                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 1.2em;">Earnings Per Share (EPS)</h3>
-                <div class="formula">
-                    $$\text{EPS} = \frac{\text{Net Income}}{\text{Outstanding Shares}}$$
+                <div class="formula fragment">
+                    <h3>Earnings Per Share (EPS)</h3>
+                    <p style="font-size: 1.2em;">
+                        EPS = <span style="border-top: 2px solid white; padding: 5px;">Net Income - Preferred Dividends</span> / Weighted Average Shares Outstanding
+                    </p>
+                    <p class="fragment">Current EPS: <span class="metric">$3.75</span></p>
                 </div>
-                
                 <aside class="notes">
-                    These are fundamental financial ratios used in our analysis.
-                    Gross margin tracks manufacturing efficiency and pricing power.
-                    EPS is the primary metric shareholders use to evaluate company performance.
+                    Explain how our ROE compares to industry average of 12%.
+                    Discuss the factors contributing to strong EPS performance.
                 </aside>
             </section>
 
-            <!-- Slide 7: Operating Income Analysis -->
+            <!-- Code Sample: Risk Analysis Algorithm -->
             <section>
-                <h2>Operating Income Breakdown</h2>
-                <p style="margin-bottom: 30px;">Segment Performance:</p>
-                
-                <ul style="font-size: 0.95em;">
-                    <li class="fragment fade-in">
-                        <strong>Product Sales:</strong> $1.47B
-                        <span style="font-size: 0.8em; color: #4fb8ff;">+15% YoY</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Services:</strong> $687M
-                        <span style="font-size: 0.8em; color: #4fb8ff;">+22% YoY</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Licensing & Other:</strong> $293M
-                        <span style="font-size: 0.8em; color: #4fb8ff;">+18% YoY</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Operating Margin:</strong> 25.0%
-                        <span style="font-size: 0.8em; color: #4fb8ff;">+120 bps</span>
-                    </li>
-                </ul>
-                
-                <aside class="notes">
-                    All three revenue segments showed strong growth.
-                    Services segment had highest growth rate, reflecting successful SaaS transition.
-                    Operating margin expanded significantly due to scale benefits.
-                    Cost management initiatives contributed approximately 80 basis points of margin expansion.
-                </aside>
-            </section>
+                <h2>Technology Innovation</h2>
+                <h3>AI-Powered Risk Assessment</h3>
+                <pre><code class="language-python" data-trim data-line-numbers="1-15">
+# Credit Risk Scoring Model
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
 
-            <!-- Slide 8: Cash Flow & Balance Sheet -->
-            <section>
-                <h2>Cash Flow & Balance Sheet Strength</h2>
-                <pre><code class="language-javascript">const financialPosition = {
-    <span class="fragment highlight-current-blue">operating_cash_flow: 723_000_000,</span>
-    <span class="fragment highlight-current-blue">free_cash_flow: 512_000_000,</span>
-    <span class="fragment highlight-current-blue">cash_and_equivalents: 2_850_000_000,</span>
-    <span class="fragment highlight-current-blue">total_debt: 1_200_000_000,</span>
-    <span class="fragment highlight-current-blue">debt_to_equity: 0.42</span>
-};
+class CreditRiskModel:
+    def __init__(self):
+        self.model = RandomForestClassifier(n_estimators=100)
+    
+    def calculate_risk_score(self, customer_data):
+        """Calculate risk score for loan applications"""
+        features = self.extract_features(customer_data)
+        risk_probability = self.model.predict_proba(features)[0][1]
+        
+        # Risk categories: Low (<0.3), Medium (0.3-0.7), High (>0.7)
+        return {'score': risk_probability, 
+                'category': self.categorize_risk(risk_probability)}
                 </code></pre>
                 <aside class="notes">
-                    Strong cash generation supports strategic investments.
-                    Free cash flow of $512M enables shareholder returns and M&A.
-                    Conservative balance sheet provides financial flexibility.
-                    Debt-to-equity ratio well below industry average.
+                    Our new AI model has reduced default rates by 23%.
+                    Processing time improved from 48 hours to real-time decisions.
                 </aside>
             </section>
 
-            <!-- Slide 9: Strategic Initiatives -->
+            <!-- Code Sample: Transaction Processing -->
             <section>
-                <h2>Strategic Initiatives & Outlook</h2>
-                <ol style="font-size: 0.9em; line-height: 2;">
-                    <li class="fragment fade-in">
-                        <strong>Digital Transformation:</strong> Cloud-first approach delivering ROI
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Market Expansion:</strong> Entry into 3 new geographic markets
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Product Innovation:</strong> 8 new products launched in Q3
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Operational Excellence:</strong> AI-driven efficiency improvements
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>M&A Strategy:</strong> Strategic acquisitions to enhance capabilities
-                    </li>
-                </ol>
+                <h2>High-Performance Systems</h2>
+                <h3>Transaction Processing Pipeline</h3>
+                <pre><code class="language-javascript" data-trim data-line-numbers="1-18">
+// Real-time transaction validator
+class TransactionProcessor {
+    async validateTransaction(transaction) {
+        const checks = await Promise.all([
+            this.checkBalance(transaction.accountId, transaction.amount),
+            this.detectFraud(transaction),
+            this.verifyLimits(transaction),
+            this.checkCompliance(transaction)
+        ]);
+        
+        if (checks.every(check => check.passed)) {
+            return this.processTransaction(transaction);
+        } else {
+            return this.handleFailure(checks);
+        }
+    }
+    
+    // Average processing time: 45ms per transaction
+}
+                </code></pre>
+                <p class="fragment">Processing capacity: <span class="metric positive">50,000 TPS</span></p>
                 <aside class="notes">
-                    Each initiative aligns with long-term growth strategy.
-                    Digital transformation projects are ahead of schedule.
-                    New market entries show early traction with $47M initial revenue.
-                    Product launches address specific customer pain points identified in surveys.
+                    Highlight the 99.99% uptime achievement.
+                    Mention our infrastructure can scale to 100,000 TPS if needed.
                 </aside>
             </section>
 
-            <!-- Slide 10: Q4 Guidance -->
+            <!-- Strategic Initiatives -->
             <section>
-                <h2>Q4 2025 Guidance</h2>
-                <div class="metric-grid" style="margin-top: 40px;">
-                    <div class="metric-card">
-                        <h4>Revenue Guidance</h4>
-                        <div class="metric-value">$2.68B</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+9-10% QoQ</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>Operating Margin</h4>
-                        <div class="metric-value">26.2%</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+120 bps</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>EPS Guidance</h4>
-                        <div class="metric-value">$1.35</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+10% QoQ</p>
-                    </div>
-                    <div class="metric-card">
-                        <h4>FCF Guidance</h4>
-                        <div class="metric-value">$580M</div>
-                        <p style="font-size: 0.8em; margin: 5px 0 0 0; color: #4fb8ff;">+13% QoQ</p>
-                    </div>
+                <h2>2025 Strategic Initiatives</h2>
+                <div style="text-align: left; margin: 40px;">
+                    <h3 class="fragment">1. Digital Transformation</h3>
+                    <ul class="fragment">
+                        <li>Launch AI chatbot for customer service</li>
+                        <li>Blockchain integration for settlements</li>
+                    </ul>
+                    
+                    <h3 class="fragment" style="margin-top: 30px;">2. Market Expansion</h3>
+                    <ul class="fragment">
+                        <li>Enter 3 new international markets</li>
+                        <li>SME lending platform launch</li>
+                    </ul>
+                    
+                    <h3 class="fragment" style="margin-top: 30px;">3. Sustainability</h3>
+                    <ul class="fragment">
+                        <li>Carbon-neutral operations by 2026</li>
+                        <li>$500M green investment fund</li>
+                    </ul>
                 </div>
                 <aside class="notes">
-                    Q4 guidance reflects strong end-of-year demand signals.
-                    Holiday season typically strong for our product portfolio.
-                    Expects seasonal uptick in enterprise spending.
-                    Conservative guidance maintains track record of beat-and-raise execution.
+                    Each initiative has dedicated budget and timeline.
+                    Board has approved all three strategic pillars.
+                    Be prepared for questions about international expansion risks.
                 </aside>
             </section>
 
-            <!-- Slide 11: Risk Factors -->
+            <!-- Risk Factors -->
             <section>
-                <h2>Key Risk Factors</h2>
-                <ul style="font-size: 0.85em; line-height: 2;">
-                    <li class="fragment semi-fade-out">
-                        <strong>Macroeconomic Headwinds:</strong> Potential impact from rising interest rates
-                    </li>
-                    <li class="fragment semi-fade-out">
-                        <strong>Currency Fluctuations:</strong> 35% of revenue from international markets
-                    </li>
-                    <li class="fragment semi-fade-out">
-                        <strong>Competitive Pressure:</strong> Increased competition in core segments
-                    </li>
-                    <li class="fragment semi-fade-out">
-                        <strong>Supply Chain:</strong> Semiconductor availability and logistics costs
-                    </li>
-                    <li class="fragment semi-fade-out">
-                        <strong>Talent Retention:</strong> Competition for technical talent remains intense
-                    </li>
-                </ul>
+                <h2>Risk Management</h2>
+                <table style="font-size: 0.7em; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Risk Category</th>
+                            <th>Level</th>
+                            <th>Mitigation Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>Regulatory Compliance</td>
+                            <td class="warning">Medium</td>
+                            <td>Enhanced monitoring systems</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Cybersecurity</td>
+                            <td class="positive">Low</td>
+                            <td>Zero-trust architecture</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Market Volatility</td>
+                            <td class="warning">Medium</td>
+                            <td>Diversified portfolio</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Credit Risk</td>
+                            <td class="positive">Low</td>
+                            <td>AI-powered assessment</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <aside class="notes">
-                    Management actively monitors and mitigates these risks.
-                    Diversified revenue geography provides some hedge against macro.
-                    Product differentiation helps defend against commoditization.
-                    Long-term supplier contracts reduce supply chain volatility.
+                    Regulatory environment is evolving - we're staying ahead.
+                    Cybersecurity investments have paid off with zero breaches.
+                    Credit risk is well-managed through our new AI models.
                 </aside>
             </section>
 
-            <!-- Slide 12: Closing Slide -->
+            <!-- Financial Projections -->
+            <section>
+                <h2>2025 Guidance</h2>
+                <div class="formula">
+                    <h3>Projected Growth Rate</h3>
+                    <p style="font-size: 1.2em;">
+                        Growth Rate = <span style="border-top: 2px solid white; padding: 5px;">(Future Value - Present Value)</span> / Present Value × 100
+                    </p>
+                </div>
+                <div style="margin-top: 40px;">
+                    <p class="fragment">Revenue Growth: <span class="metric positive">15-18%</span></p>
+                    <p class="fragment">EPS Growth: <span class="metric positive">12-15%</span></p>
+                    <p class="fragment">Customer Growth: <span class="metric positive">10-12%</span></p>
+                </div>
+                <aside class="notes">
+                    Conservative estimates based on current market conditions.
+                    Assumes stable regulatory environment and economic conditions.
+                    Prepared to revise guidance if macro conditions change.
+                </aside>
+            </section>
+
+            <!-- Closing Slide -->
             <section>
                 <h1>Thank You</h1>
-                <h3 style="margin-top: 60px;">Questions & Discussion</h3>
-                <div class="contact-box" style="margin-top: 60px;">
-                    <p><strong>Technical Contact:</strong></p>
-                    <p>📧 22f3002140@ds.study.iitm.ac.in</p>
-                </div>
-                <p style="font-size: 0.7em; margin-top: 40px; color: #666;">
-                    This presentation contains forward-looking statements subject to risks and uncertainties.
+                <h3>Questions & Discussion</h3>
+                <p style="margin-top: 80px;">
+                    <small>Contact: <span class="email">22f3002140@ds.study.iitm.ac.in</span></small><br>
+                    <small>Investor Relations: ir@company.com</small>
                 </p>
                 <aside class="notes">
-                    Thank stakeholders for their time and attention.
-                    Open floor for questions and discussion.
-                    Contact information provided for follow-up inquiries.
+                    Open floor for questions. Key topics to prepare for:
+                    - International expansion timeline and budget
+                    - Technology investment ROI
+                    - Competitive positioning
+                    - Capital allocation strategy
                 </aside>
             </section>
-
         </div>
     </div>
 
-    <!-- Reveal.js JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
 
     <script>
         Reveal.initialize({
             hash: true,
-            center: true,
+            slideNumber: true,
             transition: 'slide',
-            transitionSpeed: 'default',
-            backgroundTransition: 'fade',
-            display: 'flex',
-            margin: 0.1,
-            minScale: 0.2,
-            maxScale: 4.0,
-            
-            // Plugins
-            plugins: [
-                RevealMarkdown,
-                RevealHighlight,
-                RevealNotes
-            ],
-            
-            // Highlight.js settings
-            highlight: {
-                highlightOnLoad: true
-            }
-        });
-
-        // Event listeners for fragments
-        Reveal.addEventListener('fragmentshown', function(event) {
-            console.log('Fragment shown');
-        });
-
-        Reveal.addEventListener('fragmenthidden', function(event) {
-            console.log('Fragment hidden');
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
         });
     </script>
 </body>
