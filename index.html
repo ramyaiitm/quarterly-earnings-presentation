@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4 2024 Earnings Report</title>
+    <!-- Reveal.js core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+
     <style>
         .reveal h1, .reveal h2, .reveal h3 {
             text-transform: none;
         }
         .reveal .email {
-            font-size: 0.6em;
+            font-size: 0.7em;
             color: #42affa;
         }
         .reveal .formula {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.06);
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
         }
         .reveal .metric {
-            font-size: 2em;
+            font-size: 1.8em;
             color: #42affa;
             font-weight: bold;
         }
@@ -36,10 +38,11 @@
             position: absolute;
             bottom: 10px;
             right: 20px;
-            font-size: 0.5em;
+            font-size: 0.6em;
             color: #42affa;
-            opacity: 0.8;
+            opacity: 0.9;
         }
+        pre code { font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -49,7 +52,7 @@
             <section>
                 <h1>Q4 2024 Earnings Report</h1>
                 <h3>Financial Performance & Strategic Outlook</h3>
-                <p style="margin-top: 50px;">
+                <p style="margin-top: 40px;">
                     <small>Prepared by: Technical Consulting Team</small><br>
                     <small class="email">22f3002140@ds.study.iitm.ac.in</small>
                 </p>
@@ -76,51 +79,50 @@
                 </aside>
             </section>
 
-            <!-- Markdown Slide -->
+            <!-- Markdown Slide (uses Reveal's markdown plugin) -->
             <section data-markdown>
                 <textarea data-template>
-                    ## Key Performance Indicators
-                    
-                    ### Revenue Breakdown
-                    - **Digital Banking**: 45% of total revenue
-                    - **Investment Services**: 30% of total revenue
-                    - **Lending Operations**: 25% of total revenue
-                    
-                    ### Market Position
-                    > "We have strengthened our position as a leading digital-first financial institution"
-                    
-                    ---
-                    
-                    ### Growth Drivers
-                    1. Mobile app adoption (+35%)
-                    2. AI-powered advisory services
-                    3. Strategic partnerships
-                    
-                    <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
+## Key Performance Indicators
+
+### Revenue Breakdown
+- **Digital Banking**: 45% of total revenue
+- **Investment Services**: 30% of total revenue
+- **Lending Operations**: 25% of total revenue
+
+### Market Position
+> "We have strengthened our position as a leading digital-first financial institution"
+
+---
+
+### Growth Drivers
+1. Mobile app adoption (+35%)
+2. AI-powered advisory services
+3. Strategic partnerships
+
+<div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 </textarea>
             </section>
 
-            <!-- Financial Formulas -->
+            <!-- Financial Equations (using MathJax via Reveal math plugin) -->
             <section>
-                <h2>Financial Metrics</h2>
+                <h2>Financial Metrics & Formulas</h2>
                 <div class="formula">
                     <h3>Return on Equity (ROE)</h3>
-                    <p style="font-size: 1.2em;">
-                        ROE = <span style="border-top: 2px solid white; padding: 5px;">Net Income</span> / Shareholders' Equity
+                    <p style="font-size: 1.1em;">
+                        \(\mathrm{ROE} = \dfrac{\text{Net Income}}{\text{Shareholders' Equity}}\)
                     </p>
                     <p class="fragment">Our ROE: <span class="metric positive">15.2%</span></p>
                 </div>
                 <div class="formula fragment">
                     <h3>Earnings Per Share (EPS)</h3>
-                    <p style="font-size: 1.2em;">
-                        EPS = <span style="border-top: 2px solid white; padding: 5px;">Net Income - Preferred Dividends</span> / Weighted Average Shares Outstanding
+                    <p style="font-size: 1.1em;">
+                        \(\mathrm{EPS} = \dfrac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Avg. Shares Outstanding}}\)
                     </p>
                     <p class="fragment">Current EPS: <span class="metric">$3.75</span></p>
                 </div>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Explain how our ROE compares to industry average of 12%.
-                    Discuss the factors contributing to strong EPS performance.
+                    Explain how our ROE compares to industry average (e.g., 12%). Discuss leverage and margin drivers.
                 </aside>
             </section>
 
@@ -128,8 +130,7 @@
             <section>
                 <h2>Technology Innovation</h2>
                 <h3>AI-Powered Risk Assessment</h3>
-                <pre><code class="language-python" data-trim data-line-numbers="1-15">
-# Credit Risk Scoring Model
+                <pre><code class="language-python" data-trim data-line-numbers="1-15"># Credit Risk Scoring Model
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
@@ -148,8 +149,7 @@ class CreditRiskModel:
                 </code></pre>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Our new AI model has reduced default rates by 23%.
-                    Processing time improved from 48 hours to real-time decisions.
+                    Our new AI model has reduced default rates by 23% and allows near real-time decisions.
                 </aside>
             </section>
 
@@ -157,8 +157,7 @@ class CreditRiskModel:
             <section>
                 <h2>High-Performance Systems</h2>
                 <h3>Transaction Processing Pipeline</h3>
-                <pre><code class="language-javascript" data-trim data-line-numbers="1-18">
-// Real-time transaction validator
+                <pre><code class="language-javascript" data-trim data-line-numbers="1-18">// Real-time transaction validator
 class TransactionProcessor {
     async validateTransaction(transaction) {
         const checks = await Promise.all([
@@ -181,28 +180,27 @@ class TransactionProcessor {
                 <p class="fragment">Processing capacity: <span class="metric positive">50,000 TPS</span></p>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Highlight the 99.99% uptime achievement.
-                    Mention our infrastructure can scale to 100,000 TPS if needed.
+                    Highlight the 99.99% uptime achievement and ability to scale to 100k TPS.
                 </aside>
             </section>
 
-            <!-- Strategic Initiatives -->
+            <!-- Strategic Initiatives (fragments animated) -->
             <section>
                 <h2>2025 Strategic Initiatives</h2>
-                <div style="text-align: left; margin: 40px;">
+                <div style="text-align: left; margin: 30px;">
                     <h3 class="fragment">1. Digital Transformation</h3>
                     <ul class="fragment">
                         <li>Launch AI chatbot for customer service</li>
                         <li>Blockchain integration for settlements</li>
                     </ul>
                     
-                    <h3 class="fragment" style="margin-top: 30px;">2. Market Expansion</h3>
+                    <h3 class="fragment" style="margin-top: 20px;">2. Market Expansion</h3>
                     <ul class="fragment">
                         <li>Enter 3 new international markets</li>
                         <li>SME lending platform launch</li>
                     </ul>
                     
-                    <h3 class="fragment" style="margin-top: 30px;">3. Sustainability</h3>
+                    <h3 class="fragment" style="margin-top: 20px;">3. Sustainability</h3>
                     <ul class="fragment">
                         <li>Carbon-neutral operations by 2026</li>
                         <li>$500M green investment fund</li>
@@ -210,16 +208,14 @@ class TransactionProcessor {
                 </div>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Each initiative has dedicated budget and timeline.
-                    Board has approved all three strategic pillars.
-                    Be prepared for questions about international expansion risks.
+                    Each initiative has dedicated budget and timeline. Board has approved the three pillars.
                 </aside>
             </section>
 
-            <!-- Risk Factors -->
+            <!-- Risk Factors table -->
             <section>
                 <h2>Risk Management</h2>
-                <table style="font-size: 0.7em; width: 100%;">
+                <table style="font-size: 0.8em; width: 100%;">
                     <thead>
                         <tr>
                             <th>Risk Category</th>
@@ -252,31 +248,27 @@ class TransactionProcessor {
                 </table>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Regulatory environment is evolving - we're staying ahead.
-                    Cybersecurity investments have paid off with zero breaches.
-                    Credit risk is well-managed through our new AI models.
+                    Regulatory environment is evolving - we're staying ahead. Cybersecurity investments have paid off.
                 </aside>
             </section>
 
-            <!-- Financial Projections -->
+            <!-- Guidance / Projections -->
             <section>
                 <h2>2025 Guidance</h2>
                 <div class="formula">
                     <h3>Projected Growth Rate</h3>
-                    <p style="font-size: 1.2em;">
-                        Growth Rate = <span style="border-top: 2px solid white; padding: 5px;">(Future Value - Present Value)</span> / Present Value × 100
+                    <p style="font-size: 1.1em;">
+                        \(\mathrm{Growth\ Rate} = \dfrac{\mathrm{Future\ Value} - \mathrm{Present\ Value}}{\mathrm{Present\ Value}} \times 100\%\)
                     </p>
                 </div>
-                <div style="margin-top: 40px;">
+                <div style="margin-top: 20px;">
                     <p class="fragment">Revenue Growth: <span class="metric positive">15-18%</span></p>
                     <p class="fragment">EPS Growth: <span class="metric positive">12-15%</span></p>
                     <p class="fragment">Customer Growth: <span class="metric positive">10-12%</span></p>
                 </div>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Conservative estimates based on current market conditions.
-                    Assumes stable regulatory environment and economic conditions.
-                    Prepared to revise guidance if macro conditions change.
+                    Conservative estimates prepared; will revise if macro conditions change.
                 </aside>
             </section>
 
@@ -284,33 +276,33 @@ class TransactionProcessor {
             <section>
                 <h1>Thank You</h1>
                 <h3>Questions & Discussion</h3>
-                <p style="margin-top: 80px;">
+                <p style="margin-top: 40px;">
                     <small>Contact: <span class="email">22f3002140@ds.study.iitm.ac.in</span></small><br>
                     <small>Investor Relations: ir@company.com</small>
                 </p>
                 <div class="slide-email">22f3002140@ds.study.iitm.ac.in</div>
                 <aside class="notes">
-                    Open floor for questions. Key topics to prepare for:
-                    - International expansion timeline and budget
-                    - Technology investment ROI
-                    - Competitive positioning
-                    - Capital allocation strategy
+                    Open floor for questions. Prepare to discuss international expansion timeline, ROI, and capital allocation.
                 </aside>
             </section>
         </div>
     </div>
 
+    <!-- Reveal.js core + plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+    <!-- MathJax (for math rendering) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
 
     <script>
         Reveal.initialize({
             hash: true,
             slideNumber: true,
             transition: 'slide',
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
         });
     </script>
 </body>
